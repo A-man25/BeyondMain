@@ -38,10 +38,6 @@
 *.out
 *.app
 
-# Build directories
-build/
-Build/
-build-*/
 
 # CMake generated files
 CMakeFiles/
@@ -67,9 +63,8 @@ vcpkg_installed/
 Testing/
 .cache/
 
-
-/build/bin/
-/build/obj/
+bin/
+obj/
 .vs/
 *.user
 *.suo
