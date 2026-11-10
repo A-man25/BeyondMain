@@ -10,7 +10,12 @@
 
 #include <stdafx.h>
 
+
+#include "../Simulator/ProblemSimulator.h"
+
 int main()
 {
-	return 0;
+	ProblemSimulator simulatorObj;
+	simulatorObj.run();
+
 }

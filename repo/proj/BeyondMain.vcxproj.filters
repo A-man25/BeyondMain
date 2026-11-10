@@ -1,18 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Filter Include="BallHeight">
+      <UniqueIdentifier>{79FB3738-65B3-7985-CEBA-52E1BA911476}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Core">
       <UniqueIdentifier>{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}</UniqueIdentifier>
     </Filter>
+    <Filter Include="NumberProblems">
+      <UniqueIdentifier>{F22231E3-DEF0-24E9-C784-950FB3F1004E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Simulator">
+      <UniqueIdentifier>{6571C67C-D1DB-7AF3-1A1A-2C9986C35848}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WordGuess">
+      <UniqueIdentifier>{68DDEB2E-D447-A0A5-1D86-514B892F7EFA}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\BallHeight\BallHeightCalculator.h">
+      <Filter>BallHeight</Filter>
+    </ClInclude>
     <ClInclude Include="..\src\Core\stdafx.h">
       <Filter>Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\NumberProblems\NumberProblem.h">
+      <Filter>NumberProblems</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Simulator\ProblemSimulator.h">
+      <Filter>Simulator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WordGuess\InputHandeler.h">
+      <Filter>WordGuess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WordGuess\WordGuessSimulator.h">
+      <Filter>WordGuess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WordGuess\Display.h">
+      <Filter>WordGuess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Core\Macros.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\WordGuess\Common.h">
+      <Filter>WordGuess</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\BallHeight\BallHeightCalculator.cpp">
+      <Filter>BallHeight</Filter>
+    </ClCompile>
     <ClCompile Include="..\src\Core\main.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\NumberProblems\NumberProblem.cpp">
+      <Filter>NumberProblems</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WordGuess\WordGuessSimulator.cpp">
+      <Filter>WordGuess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WordGuess\Display.cpp">
+      <Filter>WordGuess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WordGuess\InputHandeler.cpp">
+      <Filter>WordGuess</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\BallHeight\Problems.md">
+      <Filter>BallHeight</Filter>
+    </None>
   </ItemGroup>
 </Project>

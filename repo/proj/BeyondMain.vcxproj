@@ -101,10 +101,26 @@
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\src\BallHeight\BallHeightCalculator.h" />
+    <ClInclude Include="..\src\Core\Macros.h" />
     <ClInclude Include="..\src\Core\stdafx.h" />
+    <ClInclude Include="..\src\NumberProblems\NumberProblem.h" />
+    <ClInclude Include="..\src\Simulator\ProblemSimulator.h" />
+    <ClInclude Include="..\src\WordGuess\Common.h" />
+    <ClInclude Include="..\src\WordGuess\Display.h" />
+    <ClInclude Include="..\src\WordGuess\InputHandeler.h" />
+    <ClInclude Include="..\src\WordGuess\WordGuessSimulator.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\src\BallHeight\BallHeightCalculator.cpp" />
     <ClCompile Include="..\src\Core\main.cpp" />
+    <ClCompile Include="..\src\NumberProblems\NumberProblem.cpp" />
+    <ClCompile Include="..\src\WordGuess\Display.cpp" />
+    <ClCompile Include="..\src\WordGuess\InputHandeler.cpp" />
+    <ClCompile Include="..\src\WordGuess\WordGuessSimulator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\src\BallHeight\Problems.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
