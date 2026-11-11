@@ -17,5 +17,4 @@ int main()
 {
 	ProblemSimulator simulatorObj;
 	simulatorObj.run();
-
 }

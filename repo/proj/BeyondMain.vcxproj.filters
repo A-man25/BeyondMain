@@ -21,6 +21,9 @@
     <ClInclude Include="..\src\BallHeight\BallHeightCalculator.h">
       <Filter>BallHeight</Filter>
     </ClInclude>
+    <ClInclude Include="..\src\Core\Macros.h">
+      <Filter>Core</Filter>
+    </ClInclude>
     <ClInclude Include="..\src\Core\stdafx.h">
       <Filter>Core</Filter>
     </ClInclude>
@@ -30,19 +33,16 @@
     <ClInclude Include="..\src\Simulator\ProblemSimulator.h">
       <Filter>Simulator</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\WordGuess\InputHandeler.h">
-      <Filter>WordGuess</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\WordGuess\WordGuessSimulator.h">
+    <ClInclude Include="..\src\WordGuess\Common.h">
       <Filter>WordGuess</Filter>
     </ClInclude>
     <ClInclude Include="..\src\WordGuess\Display.h">
       <Filter>WordGuess</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\Core\Macros.h">
-      <Filter>Core</Filter>
+    <ClInclude Include="..\src\WordGuess\InputHandeler.h">
+      <Filter>WordGuess</Filter>
     </ClInclude>
-    <ClInclude Include="..\src\WordGuess\Common.h">
+    <ClInclude Include="..\src\WordGuess\WordGuessSimulator.h">
       <Filter>WordGuess</Filter>
     </ClInclude>
   </ItemGroup>
@@ -56,13 +56,13 @@
     <ClCompile Include="..\src\NumberProblems\NumberProblem.cpp">
       <Filter>NumberProblems</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\WordGuess\WordGuessSimulator.cpp">
-      <Filter>WordGuess</Filter>
-    </ClCompile>
     <ClCompile Include="..\src\WordGuess\Display.cpp">
       <Filter>WordGuess</Filter>
     </ClCompile>
     <ClCompile Include="..\src\WordGuess\InputHandeler.cpp">
+      <Filter>WordGuess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\WordGuess\WordGuessSimulator.cpp">
       <Filter>WordGuess</Filter>
     </ClCompile>
   </ItemGroup>

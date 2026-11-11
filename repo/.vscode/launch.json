@@ -1,0 +1,28 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "BeyondMain | Windows MSVC Debug",
+      "type": "cppvsdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/bin/Debug-x64/BeyondMain.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "preLaunchTask": "BeyondMain | Build Debug"
+    },
+    {
+      "name": "BeyondMain | macOS LLDB Debug",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/.beyondmain/run/BeyondMain",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "terminal": "integrated",
+      "stopOnEntry": false,
+      "preLaunchTask": "BeyondMain | Build Debug"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    {
+      "name": "Windows MSVC",
+      "includePath": [
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/src/core",
+        "${workspaceFolder}/src/**"
+      ],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-msvc-x64"
+    },
+    {
+      "name": "macOS Clang",
+      "compilerPath": "/usr/bin/clang++",
+      "includePath": [
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/src/core",
+        "${workspaceFolder}/src/**"
+      ],
+      "defines": ["_DEBUG"],
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}

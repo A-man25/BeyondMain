@@ -1,0 +1,9 @@
+{
+  "C_Cpp.default.cppStandard": "c++17",
+  "files.associations": { "*.tpp": "cpp", "*.inl": "cpp" },
+  "search.exclude": {
+    "**/.vs": true,
+    "**/obj": true,
+    "**/.beyondmain": true
+  }
+}

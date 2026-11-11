@@ -1,0 +1,73 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "BeyondMain | Build Debug",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile", "-ExecutionPolicy", "Bypass", "-File",
+        "${workspaceFolder}/setup/Windows/Build.ps1",
+        "-Mode", "Build", "-Configuration", "Debug"
+      ],
+      "windows": { "problemMatcher": "$msCompile" },
+      "osx": {
+        "command": "/bin/bash",
+        "args": ["${workspaceFolder}/setup/Mac/build.sh", "Debug"],
+        "problemMatcher": "$gcc"
+      },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared", "clear": true }
+    },
+    {
+      "label": "BeyondMain | Build Release",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile", "-ExecutionPolicy", "Bypass", "-File",
+        "${workspaceFolder}/setup/Windows/Build.ps1",
+        "-Mode", "Build", "-Configuration", "Release"
+      ],
+      "windows": { "problemMatcher": "$msCompile" },
+      "osx": {
+        "command": "/bin/bash",
+        "args": ["${workspaceFolder}/setup/Mac/build.sh", "Release"],
+        "problemMatcher": "$gcc"
+      },
+      "group": "build",
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared", "clear": true }
+    },
+    {
+      "label": "BeyondMain | Regenerate Projects",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile", "-ExecutionPolicy", "Bypass", "-File",
+        "${workspaceFolder}/setup/Windows/Build.ps1", "-Mode", "Generate"
+      ],
+      "osx": {
+        "command": "/bin/bash",
+        "args": ["${workspaceFolder}/setup/Mac/build.sh", "--generate"]
+      },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    },
+    {
+      "label": "BeyondMain | Clean",
+      "type": "process",
+      "command": "powershell.exe",
+      "args": [
+        "-NoProfile", "-ExecutionPolicy", "Bypass", "-File",
+        "${workspaceFolder}/setup/Windows/Build.ps1", "-Mode", "Clean"
+      ],
+      "osx": {
+        "command": "/bin/bash",
+        "args": ["${workspaceFolder}/setup/Mac/build.sh", "--clean"]
+      },
+      "problemMatcher": [],
+      "presentation": { "reveal": "always", "panel": "shared" }
+    }
+  ]
+}
